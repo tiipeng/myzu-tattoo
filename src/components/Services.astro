@@ -1,0 +1,80 @@
+<section id="services">
+	<h2>Our Services</h2>
+	<p class="section-subtitle">
+		From small minimalist designs to full sleeves, we've got you covered
+	</p>
+	<div class="services-grid">
+		<div class="service-card">
+			<h3>Custom Tattoos</h3>
+			<p>Bring your vision to life with a completely custom design tailored to your style and story.</p>
+			<span class="price">Starting at $150</span>
+		</div>
+		<div class="service-card">
+			<h3>Cover-Ups</h3>
+			<p>Transform old or unwanted tattoos into beautiful new artwork with expert cover-up techniques.</p>
+			<span class="price">Starting at $200</span>
+		</div>
+		<div class="service-card">
+			<h3>Touch-Ups</h3>
+			<p>Refresh and restore your existing tattoos to bring back their original vibrance and detail.</p>
+			<span class="price">Starting at $80</span>
+		</div>
+		<div class="service-card">
+			<h3>Flash Designs</h3>
+			<p>Choose from our curated collection of pre-designed tattoos for quick sessions.</p>
+			<span class="price">Starting at $100</span>
+		</div>
+	</div>
+</section>
+
+<style>
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.service-card {
+		background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+		padding: 2.5rem;
+		border-radius: 12px;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		transition: all 0.3s;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.service-card:hover {
+		border-color: #d97706;
+		transform: translateY(-5px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	.service-card p {
+		color: #aaa;
+		line-height: 1.7;
+		flex-grow: 1;
+		margin-bottom: 1.5rem;
+	}
+
+	.price {
+		color: #d97706;
+		font-weight: 600;
+		font-size: 1.1rem;
+		letter-spacing: 0.5px;
+	}
+
+	@media (max-width: 768px) {
+		.services-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,153 @@
+<section id="booking">
+	<h2>Book Your Appointment</h2>
+	<p class="section-subtitle">
+		Ready to get inked? Fill out the form below to schedule your consultation
+	</p>
+	<div class="booking-container">
+		<div class="typeform-placeholder">
+			<div class="placeholder-content">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+				</svg>
+				<h3>Typeform Integration</h3>
+				<p>Replace this placeholder with your Typeform embed code</p>
+				<div class="instructions">
+					<p><strong>To integrate your Typeform:</strong></p>
+					<ol>
+						<li>Create your booking form on <a href="https://www.typeform.com" target="_blank">Typeform.com</a></li>
+						<li>Get the embed code from your form settings</li>
+						<li>Replace the content of this div with your embed code</li>
+					</ol>
+					<div class="code-example">
+						<code>
+							&lt;div data-tf-live="YOUR_FORM_ID"&gt;&lt;/div&gt;<br />
+							&lt;script src="//embed.typeform.com/next/embed.js"&gt;&lt;/script&gt;
+						</code>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.booking-container {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	.typeform-placeholder {
+		background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+		border: 2px dashed rgba(217, 119, 6, 0.5);
+		border-radius: 16px;
+		padding: 4rem 3rem;
+		text-align: center;
+		min-height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.placeholder-content {
+		max-width: 600px;
+	}
+
+	.placeholder-content svg {
+		width: 80px;
+		height: 80px;
+		color: #d97706;
+		margin: 0 auto 2rem;
+	}
+
+	.placeholder-content h3 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: #fff;
+	}
+
+	.placeholder-content > p {
+		color: #999;
+		font-size: 1.1rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.instructions {
+		text-align: left;
+		background: #0a0a0a;
+		padding: 2rem;
+		border-radius: 12px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.instructions p {
+		margin-bottom: 1rem;
+		color: #ccc;
+	}
+
+	.instructions strong {
+		color: #d97706;
+		font-size: 1.1rem;
+	}
+
+	.instructions ol {
+		margin-left: 1.5rem;
+		margin-bottom: 1.5rem;
+		color: #aaa;
+		line-height: 1.8;
+	}
+
+	.instructions ol li {
+		margin-bottom: 0.5rem;
+	}
+
+	.instructions a {
+		color: #d97706;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	.instructions a:hover {
+		color: #ea580c;
+		text-decoration: underline;
+	}
+
+	.code-example {
+		background: #000;
+		padding: 1.5rem;
+		border-radius: 8px;
+		border: 1px solid rgba(255, 255, 255, 0.05);
+		overflow-x: auto;
+	}
+
+	.code-example code {
+		font-family: 'Courier New', monospace;
+		font-size: 0.9rem;
+		color: #4ade80;
+		line-height: 1.8;
+	}
+
+	@media (max-width: 768px) {
+		.booking-container {
+			padding: 1rem;
+		}
+
+		.typeform-placeholder {
+			padding: 2rem 1.5rem;
+			min-height: auto;
+		}
+
+		.placeholder-content svg {
+			width: 60px;
+			height: 60px;
+		}
+
+		.placeholder-content h3 {
+			font-size: 1.5rem;
+		}
+
+		.instructions {
+			padding: 1.5rem;
+		}
+	}
+</style>

@@ -1,0 +1,83 @@
+<section id="gallery">
+	<h2>Our Work</h2>
+	<p class="section-subtitle">
+		Browse our portfolio of stunning custom tattoos
+	</p>
+	<div class="gallery-grid">
+		<div class="gallery-item">
+			<img src="https://images.pexels.com/photos/5022848/pexels-photo-5022848.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tattoo artwork 1" />
+		</div>
+		<div class="gallery-item">
+			<img src="https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tattoo artwork 2" />
+		</div>
+		<div class="gallery-item">
+			<img src="https://images.pexels.com/photos/5022842/pexels-photo-5022842.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tattoo artwork 3" />
+		</div>
+		<div class="gallery-item">
+			<img src="https://images.pexels.com/photos/633432/pexels-photo-633432.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tattoo artwork 4" />
+		</div>
+		<div class="gallery-item">
+			<img src="https://images.pexels.com/photos/1319799/pexels-photo-1319799.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tattoo artwork 5" />
+		</div>
+		<div class="gallery-item">
+			<img src="https://images.pexels.com/photos/1194412/pexels-photo-1194412.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tattoo artwork 6" />
+		</div>
+	</div>
+</section>
+
+<style>
+	#gallery {
+		background: #0f0f0f;
+	}
+
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5rem;
+		margin-top: 3rem;
+	}
+
+	.gallery-item {
+		position: relative;
+		aspect-ratio: 1;
+		overflow: hidden;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: transform 0.3s;
+	}
+
+	.gallery-item:hover {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+
+	.gallery-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.5s;
+	}
+
+	.gallery-item:hover img {
+		transform: scale(1.1);
+	}
+
+	.gallery-item::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(135deg, rgba(217, 119, 6, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	.gallery-item:hover::after {
+		opacity: 1;
+	}
+
+	@media (max-width: 768px) {
+		.gallery-grid {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+	}
+</style>
