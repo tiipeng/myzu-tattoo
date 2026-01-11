@@ -1,7 +1,7 @@
 <section id="booking">
-	<h2>Book Your Appointment</h2>
+	<h2>Book a Consultation</h2>
 	<p class="section-subtitle">
-		Ready to get inked? Fill out the form below to schedule your consultation
+		Let's create your perfect minimalist tattoo
 	</p>
 	<div class="booking-container">
 		<div class="typeform-placeholder">
@@ -31,6 +31,10 @@
 </section>
 
 <style>
+	#booking {
+		background: #f5f5f5;
+	}
+
 	.booking-container {
 		max-width: 900px;
 		margin: 0 auto;
@@ -38,9 +42,9 @@
 	}
 
 	.typeform-placeholder {
-		background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-		border: 2px dashed rgba(217, 119, 6, 0.5);
-		border-radius: 16px;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+		border-radius: 2px;
 		padding: 4rem 3rem;
 		text-align: center;
 		min-height: 500px;
@@ -54,47 +58,53 @@
 	}
 
 	.placeholder-content svg {
-		width: 80px;
-		height: 80px;
-		color: #d97706;
+		width: 60px;
+		height: 60px;
+		color: #1a1a1a;
 		margin: 0 auto 2rem;
+		opacity: 0.3;
 	}
 
 	.placeholder-content h3 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin-bottom: 1rem;
-		color: #fff;
+		color: #1a1a1a;
+		font-weight: 500;
 	}
 
 	.placeholder-content > p {
 		color: #999;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin-bottom: 2.5rem;
 	}
 
 	.instructions {
 		text-align: left;
-		background: #0a0a0a;
+		background: #fff;
 		padding: 2rem;
-		border-radius: 12px;
-		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 2px;
+		border: 1px solid #e5e5e5;
+		margin-top: 1rem;
 	}
 
 	.instructions p {
 		margin-bottom: 1rem;
-		color: #ccc;
+		color: #666;
+		font-size: 0.95rem;
 	}
 
 	.instructions strong {
-		color: #d97706;
-		font-size: 1.1rem;
+		color: #1a1a1a;
+		font-size: 1rem;
+		font-weight: 600;
 	}
 
 	.instructions ol {
 		margin-left: 1.5rem;
 		margin-bottom: 1.5rem;
-		color: #aaa;
+		color: #777;
 		line-height: 1.8;
+		font-size: 0.95rem;
 	}
 
 	.instructions ol li {
@@ -102,29 +112,29 @@
 	}
 
 	.instructions a {
-		color: #d97706;
-		text-decoration: none;
-		transition: color 0.3s;
+		color: #1a1a1a;
+		text-decoration: underline;
+		transition: opacity 0.3s;
 	}
 
 	.instructions a:hover {
-		color: #ea580c;
-		text-decoration: underline;
+		opacity: 0.6;
 	}
 
 	.code-example {
-		background: #000;
+		background: #fafafa;
 		padding: 1.5rem;
-		border-radius: 8px;
-		border: 1px solid rgba(255, 255, 255, 0.05);
+		border-radius: 2px;
+		border: 1px solid #e5e5e5;
 		overflow-x: auto;
+		margin-top: 1rem;
 	}
 
 	.code-example code {
 		font-family: 'Courier New', monospace;
-		font-size: 0.9rem;
-		color: #4ade80;
-		line-height: 1.8;
+		font-size: 0.85rem;
+		color: #333;
+		line-height: 1.6;
 	}
 
 	@media (max-width: 768px) {
@@ -138,12 +148,12 @@
 		}
 
 		.placeholder-content svg {
-			width: 60px;
-			height: 60px;
+			width: 50px;
+			height: 50px;
 		}
 
 		.placeholder-content h3 {
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 
 		.instructions {

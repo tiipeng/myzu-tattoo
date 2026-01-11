@@ -1,7 +1,7 @@
 <section id="gallery">
-	<h2>Our Work</h2>
+	<h2>Portfolio</h2>
 	<p class="section-subtitle">
-		Browse our portfolio of stunning custom tattoos
+		Minimalist designs with lasting beauty
 	</p>
 	<div class="gallery-grid">
 		<div class="gallery-item">
@@ -27,13 +27,13 @@
 
 <style>
 	#gallery {
-		background: #0f0f0f;
+		background: #fff;
 	}
 
 	.gallery-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 1.5rem;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
 		margin-top: 3rem;
 	}
 
@@ -41,13 +41,16 @@
 		position: relative;
 		aspect-ratio: 1;
 		overflow: hidden;
-		border-radius: 12px;
+		border-radius: 2px;
 		cursor: pointer;
-		transition: transform 0.3s;
+		transition: all 0.3s;
+		border: 1px solid #e5e5e5;
 	}
 
 	.gallery-item:hover {
-		transform: scale(1.05);
+		transform: translateY(-8px);
+		border-color: #1a1a1a;
+		box-shadow: 0 12px 30px rgba(26, 26, 26, 0.1);
 		z-index: 10;
 	}
 
@@ -55,18 +58,18 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		transition: transform 0.5s;
+		transition: transform 0.4s;
 	}
 
 	.gallery-item:hover img {
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	.gallery-item::after {
 		content: '';
 		position: absolute;
 		inset: 0;
-		background: linear-gradient(135deg, rgba(217, 119, 6, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+		background: rgba(26, 26, 26, 0.05);
 		opacity: 0;
 		transition: opacity 0.3s;
 	}
@@ -77,7 +80,7 @@
 
 	@media (max-width: 768px) {
 		.gallery-grid {
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		}
 	}
 </style>
